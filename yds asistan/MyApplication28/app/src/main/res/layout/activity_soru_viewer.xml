@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SoruViewer">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/soruviewer_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorCustomPink"
+        app:title="Denemeler"
+        app:titleTextColor="#fff"
+        android:theme="@style/ToolbarTheme"
+        >
+
+
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView
+        android:layout_below="@id/soruviewer_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tvTopDescriptivePAragraph"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The famous English detective Thomas Wilson
+was actually a great lover of music; he often
+played the violin and even composed some
+music. He would sometimes spend a whole
+afternoon, listening to music, and this would
+make him extremely happy. On such occasions
+he grew gentle and dreamy, quite unlike the
+sharp, clever and rather frightening detective
+that everybody knows him to be. But such a
+mood rarely lasted long and when it left him, he
+was more alert and businesslike than ever."
+                android:textSize="15dp"
+                android:textStyle="bold"
+
+                />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:id="@+id/tvQuestion"
+                android:layout_below="@id/tvTopDescriptivePAragraph"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The writer describes a side of Detective
+Wilson‟s character which _____."
+                />
+<TextView
+    android:id="@+id/tva"
+    android:textSize="15dp"
+    android:ems="2"
+    android:text="A:"
+    android:layout_below="@id/tvQuestion"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/soruViewer_tvAResult"
+                android:textSize="15dp"
+                android:text="he ctivehefor a detectivehe thinks is unsuitable for a detectivehe thinks is unsuitable for a detectivehe thinks is unsuitable for a detectivehe thinks is unsuitable for a detectivehe thinks is unsuitable for a detective"
+                android:layout_below="@id/tvQuestion"
+                android:layout_toRightOf="@id/tva"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tvb"
+                android:textSize="15dp"
+                android:ems="2"
+                android:text="B:"
+                android:layout_below="@id/soruViewer_tvAResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/soruViewer_tvBResult"
+                android:textSize="15dp"
+                android:text="is referred to as a major defect"
+                android:layout_below="@id/soruViewer_tvAResult"
+                android:layout_toRightOf="@id/tvb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tvc"
+                android:textSize="15dp"
+                android:ems="2"
+                android:text="C:"
+                android:layout_below="@id/soruViewer_tvBResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/soruViewer_tvCResult"
+                android:textSize="15dp"
+                android:text="was little known by the general public"
+                android:layout_below="@id/soruViewer_tvBResult"
+                android:layout_toRightOf="@id/tva"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tvd"
+                android:textSize="15dp"
+                android:ems="2"
+                android:text="D:"
+                android:layout_below="@id/soruViewer_tvCResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/soruViewer_tvDResult"
+                android:textSize="15dp"
+                android:text="had a bad effect upon his work."
+                android:layout_below="@id/soruViewer_tvCResult"
+                android:layout_toRightOf="@id/tva"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tve"
+                android:textSize="15dp"
+                android:ems="2"
+                android:text="E:"
+                android:layout_below="@id/soruViewer_tvDResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/soruViewer_tvEResult"
+                android:textSize="15dp"
+                android:text="eventually leeventually led to his downfall.eventually led to his downfall.eventually led to his downfall.eventually led to his downfall.eventually led to his downfall.eventually led to his downfall.eventually led to his downfall.eventually led to his downfall.eventually led to his downfall.eventually led to his downfall.eventually led to his downfall.eventually led to his downfall.d to his downfall."
+                android:layout_below="@id/soruViewer_tvDResult"
+                android:layout_toRightOf="@id/tva"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+
+
+
+    </ScrollView>
+
+</RelativeLayout>

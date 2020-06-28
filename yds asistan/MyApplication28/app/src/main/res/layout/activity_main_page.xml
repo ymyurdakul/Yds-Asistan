@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainPage"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:alpha="0.5"
+        android:background="@mipmap/back">
+
+
+    </FrameLayout>
+
+<LinearLayout
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ec.dina.btefonts.TextViewFonts
+            android:id="@+id/ydstextintro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="YDS ASİSTAN"
+            android:textStyle="bold"
+            android:textSize="45dp"
+            android:textColor="#d50000"
+            android:gravity="center"
+            app:dm_font="big_Pixel"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.github.nikartm.button.FitButton
+            android:layout_marginRight="10dp"
+            android:layout_below="@id/ydstextintro"
+            android:id="@+id/btnMakaleler"
+            style="@style/MainPageButton"
+            app:fb_icon="@mipmap/article"
+            app:fb_text="Makaleler"
+            app:fb_backgroundColor="@color/colorCustomBlue"
+
+
+            />
+
+        <com.github.nikartm.button.FitButton
+        android:id="@+id/btnCikmisSorular"
+        android:layout_below="@id/ydstextintro"
+        style="@style/MainPageButton"
+        app:fb_icon="@mipmap/exam"
+        app:fb_text="Denemeler"
+        app:fb_backgroundColor="@color/colorCustomPink"
+        />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        >
+        <com.github.nikartm.button.FitButton
+            android:id="@+id/btnDenemeler"
+            android:layout_marginRight="10dp"
+            android:layout_below="@id/ydstextintro"
+            style="@style/MainPageButton"
+            app:fb_icon="@drawable/time_24dp"
+            app:fb_iconColor="#fff"
+            app:fb_text="Zaman"
+            app:fb_backgroundColor="@color/colorCustomGreen"
+            />
+
+        <com.github.nikartm.button.FitButton
+        android:id="@+id/btnKelimeler"
+        android:layout_below="@id/ydstextintro"
+        style="@style/MainPageButton"
+        app:fb_icon="@drawable/words"
+        app:fb_text="Kelimeler"
+        app:fb_backgroundColor="@color/colorCustomOrange"
+
+        />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        >
+        <com.github.nikartm.button.FitButton
+            android:id="@+id/btnKonular"
+            android:layout_marginRight="10dp"
+            android:layout_below="@id/ydstextintro"
+            style="@style/MainPageButton"
+            app:fb_icon="@mipmap/detail"
+            app:fb_text="Konular"
+            app:fb_backgroundColor="@color/colorCustomDarkBlue"
+
+            />
+
+        <com.github.nikartm.button.FitButton
+        android:id="@+id/btnAraclar"
+        android:layout_below="@id/ydstextintro"
+        style="@style/MainPageButton"
+        app:fb_icon="@mipmap/tools"
+        app:fb_text="Araçlar"
+        app:fb_backgroundColor="@color/colorCustomPurple"
+        />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        >
+        <com.github.nikartm.button.FitButton
+            android:id="@+id/btnOsym"
+            android:layout_marginRight="10dp"
+            android:layout_below="@id/ydstextintro"
+            style="@style/MainPageButton"
+            app:fb_icon="@mipmap/osym"
+            app:fb_text="Ösym"
+            app:fb_backgroundColor="@color/colorOlive"
+            />
+        <com.github.nikartm.button.FitButton
+        android:id="@+id/btnHakkinda"
+        android:layout_below="@id/ydstextintro"
+        style="@style/MainPageButton"
+        app:fb_icon="@mipmap/about"
+        app:fb_text="Hakkında"
+        app:fb_backgroundColor="@color/colorLightOrange"
+        />
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ToolsActivity">
+<androidx.appcompat.widget.Toolbar
+    android:id="@+id/tools_toolbar"
+    android:background="@color/colorCustomPurple"
+    app:title="Araçlar"
+   android:theme="@style/ToolbarTheme"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+app:titleTextColor="#fff"
+    >
+
+
+</androidx.appcompat.widget.Toolbar>
+ <me.ibrahimsn.lib.SmoothBottomBar
+     android:layout_below="@id/tools_toolbar"
+     android:id="@+id/toolstopbar"
+     android:layout_width="match_parent"
+     android:layout_height="70dp"
+     app:backgroundColor="@color/colorCustomPurple"
+     app:menu="@menu/topmenu"/>
+<FrameLayout
+    android:id="@+id/tools_framelayout"
+    android:layout_below="@id/toolstopbar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+</FrameLayout>
+</RelativeLayout>

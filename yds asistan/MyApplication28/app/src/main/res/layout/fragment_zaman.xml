@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ZamanFragment"
+    android:padding="6dp"
+    >
+<RelativeLayout
+    android:id="@+id/zamanmainlayout"
+    android:background="@drawable/strokedandrounded"
+    android:layout_width="match_parent"
+    android:layout_height="150dp">
+    <TextView
+        android:id="@+id/ssss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00aba9"
+        android:text="Sınav Süresi Sayacı"
+        android:textSize="18dp"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        />
+    <io.github.deweyreed.digitalwatchview.DigitalWatchView
+        android:layout_below="@id/ssss"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/digitalWatchView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:dwv_background_alpha="0.1"
+        app:dwv_background_color="@android:color/black"
+        app:dwv_blink_colons="true"
+        app:dwv_foreground_color="@android:color/holo_orange_dark"
+        app:dwv_hours="3"
+        app:dwv_minutes="0"
+        app:dwv_normal_text_size="30dp"
+        app:dwv_seconds="00"
+        app:dwv_seconds_text_size="12sp"
+        app:dwv_show_background="false"
+        app:dwv_show_hours="true"
+        app:dwv_show_seconds="true"
+        app:dwv_show_two_digits="true"
+        android:layout_centerVertical="true"
+        />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_alignParentBottom="true"
+    >
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:text="Başlat"
+        android:layout_weight="1"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:text="Durdur"
+        android:layout_weight="1"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:text="Sıfırla"
+        android:layout_weight="1"
+        />
+
+</LinearLayout>
+</RelativeLayout>
+<RelativeLayout
+    android:layout_below="@id/zamanmainlayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/strokedandrounded"
+    >
+    <TextView
+        android:id="@+id/sl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00aba9"
+        android:text="Sınava Kalan Gün"
+        android:textSize="18dp"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        />
+        <TextView
+            android:id="@+id/sl2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="190"
+            android:layout_below="@id/sl"
+            android:textSize="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/holo_orange_dark"
+            />
+
+</RelativeLayout>
+
+</RelativeLayout>

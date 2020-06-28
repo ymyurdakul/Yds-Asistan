@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Osym">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/osym_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorOlive"
+        app:title="Ösym"
+        app:titleTextColor="#fff"
+        android:theme="@style/ToolbarTheme"
+        >
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.kazy.lx.LxWebView
+        android:layout_below="@id/osym_toolbar"
+        android:id="@+id/webview_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        dom_storage_enabled="true"
+        app_cache_enabled="true"
+        java_script_enabled="true"
+        built_in_zoom_controls="true"
+        display_zoom_controls="true"
+
+        />
+
+</RelativeLayout>

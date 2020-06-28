@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/strokedandrounded"
+    android:padding="4dp"
+    android:layout_margin="5dp"
+    >
+
+
+
+        <TextView
+            android:textStyle="bold"
+            android:padding="3dp"
+            android:background="#f1fcfc"
+            android:gravity="center"
+            android:id="@+id/notlar_recitem_tarih_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="12.12.2012"
+            android:textSize="19dp"
+            android:layout_weight="1"
+            android:ems="10"
+
+            />
+    <TextView
+        android:id="@+id/notlar_recitem_not_tv"
+        android:layout_below="@id/notlar_recitem_tarih_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="
+       Bugun doktrinde alınan karalar uygulandıBugun doktrinde alınan karalar uygulandı
+        Bugun doktrinde alınan karalar uygulandıBugun doktrinde alınan karalar uygulandıBugun doktrinde alınan karalar uygulandıBugun doktrinde alınan karalar uygulandıBugun doktrinde alınan karalar uygulandıBugun doktrinde alınan karalar uygulandı
+            "
+        android:textAlignment="viewStart"
+        android:textDirection="ltr"
+        />
+</RelativeLayout>
+

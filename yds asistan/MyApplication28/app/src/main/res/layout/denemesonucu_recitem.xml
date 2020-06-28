@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_margin="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+
+       <RelativeLayout
+        android:padding="4dp"
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/strokedandrounded"
+        >
+
+
+        <TextView
+            android:textStyle="bold"
+            android:padding="3dp"
+            android:background="#f1fcfc"
+            android:gravity="center"
+            android:id="@+id/denemesonuc_recitem_tarih"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="12.12.2012"
+            android:textSize="19dp"
+            android:layout_weight="1"
+            android:ems="10"
+
+            />
+
+        <LinearLayout
+             android:paddingLeft="9dp"
+            android:paddingRight="9dp"
+            android:layout_below="@id/denemesonuc_recitem_tarih"
+            android:id="@+id/lin1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+
+                android:ems="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:textSize="@dimen/generalNormalTextSize"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:id="@+id/denemesonuc_recitem_tvDogruHolder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Doğru"
+                android:textSize="@dimen/generalNormalTextSize"
+                android:layout_weight="1"
+                android:ems="2"
+                />
+            <TextView
+                android:id="@+id/denemesonuc_recitem_tvYanlisHolder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yanlış"
+                android:layout_toRightOf="@id/denemesonuc_recitem_tvDogruHolder"
+                android:textSize="@dimen/generalNormalTextSize"
+                 android:layout_weight="1"
+android:ems="2"
+                />
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Puan"
+                android:textSize="@dimen/generalNormalTextSize"
+                android:layout_weight="1"
+                android:ems="2"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_below="@id/lin1"
+            android:paddingLeft="9dp"
+            android:paddingRight="9dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/denemesonucu_recitem_denemeno"
+                android:ems="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textSize="@dimen/edtAndTvTExtSize"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:id="@+id/denemesonucu_recitem_dogrusayısı"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="65"
+                android:textSize="@dimen/edtAndTvTExtSize"
+                android:layout_weight="1"
+                android:ems="2"
+                android:textColor="#090"
+                />
+            <TextView
+                android:id="@+id/denemesonucu_recitem_yanlissayisi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15"
+                android:layout_toRightOf="@id/denemesonuc_recitem_tvDogruHolder"
+                android:textSize="@dimen/edtAndTvTExtSize"
+                android:layout_weight="1"
+                android:ems="2"
+                android:textColor="#900"
+                />
+            <TextView
+
+                android:id="@+id/denemesonuc_recitem_puan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="86"
+                android:textSize="@dimen/edtAndTvTExtSize"
+                android:layout_weight="1"
+                android:ems="2"
+                android:textColor="#009"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

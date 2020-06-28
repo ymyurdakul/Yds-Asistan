@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/topmenu_item_puanhesaplama"
+        android:title="Puan Hesapla"
+        android:icon="@drawable/hesapla"
+        >
+
+    </item>
+    <item
+        android:id="@+id/topmmenu_item_sinavsonuclari"
+        android:title="Sınav Sonuçları"
+        android:icon="@drawable/sinav_24dp"
+
+        >
+
+    </item>
+    <item
+        android:id="@+id/topmenu_item_zaman"
+        android:title="Zaman"
+        android:icon="@drawable/time_24dp"
+        >
+
+    </item>
+    <item
+        android:id="@+id/topmmenu_item_notlar"
+        android:title="Notlar"
+        android:icon="@drawable/notes_24dp">
+
+    </item>
+    <item
+        android:id="@+id/topmmenu_item_more"
+        android:title=""
+        android:icon="@drawable/more_24dp">
+
+    </item>
+
+</menu>

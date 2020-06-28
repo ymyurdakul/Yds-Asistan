@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MakaleViewer">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/makaleleviewer_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00b0ff"
+        app:title="Makale"
+        app:titleTextColor="#fff"
+        android:theme="@style/ToolbarTheme"
+        >
+        <it.emperor.animatedcheckbox.AnimatedCheckBox
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:id="@+id/makaleviewer_isread"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:acb_animation_duration="500"
+            app:acb_border_checked_color="#000"
+            app:acb_border_checked_stroke_width="2dp"
+            app:acb_border_not_checked_color="#000"
+            app:acb_checked="false"
+            app:acb_circle_color="#090"
+            app:acb_hook_color="#fff"
+            app:acb_hook_stroke_width="1dp"
+            app:acb_padding="10dp"
+            android:layout_gravity="end"
+            />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+
+    <ScrollView
+        android:layout_below="@id/makaleleviewer_toolbar"
+        android:id="@+id/makaleviewer_tv_inglizceScview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+ <LinearLayout
+     android:scrollbars="vertical"
+     android:orientation="vertical"
+     android:layout_below="@id/makaleleviewer_toolbar"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+
+         <github.hotstu.zebratextview.ZebraTextView
+             android:id="@+id/makaleviewer_tv_inglizce"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="The famous English detective Thomas Wilson
+was actually a great lover of music; he often
+played the violin and even composed some
+music. He would sometimes spend a whole
+afternoon, listening to music, and this would
+make him extremely happy. On such occasions
+he grew gentle and dreamy, quite unlike the
+sharp, clever and rather frightening detective
+that everybody knows him to be.
+But such a mood rarely lasted long and when it left him,he was more alert and businesslike than ever.
+"
+             android:textSize="18dp"
+             android:textDirection="ltr"
+             android:textAlignment="viewStart"
+             />
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/makaleviewer_btnlingroup"
+    android:orientation="horizontal"
+    >
+    <com.google.android.material.button.MaterialButton
+        android:layout_weight="1"
+        android:id="@+id/makale_btnView"
+        android:text="Göster"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_below="@id/makaleviewer_tv_inglizceScview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <com.google.android.material.button.MaterialButton
+        android:layout_weight="1"
+        android:id="@+id/makale_btnDinle"
+        android:text="Dinle"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_below="@id/makaleviewer_tv_inglizceScview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+
+
+     <github.hotstu.zebratextview.ZebraTextView
+         android:id="@+id/makaleviewer_tv_turkce"
+
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="The famous English detective Thomas Wilson
+was actually a great lover of music; he often
+played the violin and even composed some
+music. He would sometimes spend a whole
+afternoon, listening to music, and this would
+make him extremely happy. On such occasions
+he grew gentle and dreamy, quite unlike the
+sharp, clever and rather frightening detective
+that everybody knows him to be.
+But such a mood rarely lasted long and when it left him,he was more alert and businesslike than ever.
+"
+         android:textSize="18dp"
+         android:textDirection="ltr"
+         android:textAlignment="viewStart"
+         />
+
+
+ </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

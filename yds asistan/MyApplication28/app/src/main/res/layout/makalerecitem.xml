@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:padding="9dp"
+    android:id="@+id/wrapperlinearlayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/strokeandroundedmakale"
+android:layout_margin="5dp"
+    >
+    <it.emperor.animatedcheckbox.AnimatedCheckBox
+        android:focusable="false"
+        android:layout_alignParentRight="true"
+        android:layout_weight="1"
+        android:id="@+id/makale_recitem_checkbox_isread"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:acb_animation_duration="500"
+        app:acb_border_checked_color="#000"
+        app:acb_border_checked_stroke_width="2dp"
+        app:acb_border_not_checked_color="#000"
+        app:acb_checked="false"
+        app:acb_circle_color="#090"
+        app:acb_hook_color="#fff"
+        app:acb_hook_stroke_width="1dp"
+        app:acb_padding="10dp"
+        android:layout_gravity="end"
+         android:soundEffectsEnabled="true"
+        android:contextClickable="false"
+        />
+    <LinearLayout
+        android:layout_toLeftOf="@id/makale_recitem_checkbox_isread"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:text="Makele No     "
+                android:textSize="20dp"
+                />
+            <TextView
+                android:id="@+id/makale_recitem_tv_makaleno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="1"
+                android:textSize="20dp"
+
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:text="Kelime Sayısı     "
+                android:textSize="20dp"
+                />
+            <TextView
+                android:id="@+id/makale_recitem_tv_kelimesayisi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="120"
+                android:textSize="20dp"
+
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

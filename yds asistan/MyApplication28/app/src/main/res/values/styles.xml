@@ -1,0 +1,58 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MainPageButton">
+    <item name="android:padding">6dp</item>
+    <item name="android:gravity">center</item>
+   <item name="android:layout_width">130dp</item>
+    <item name="android:layout_height">100dp</item>
+    <item name="fb_textColor">#fff</item>
+    <item name="fb_iconMarginEnd">16dp</item>
+    <item name="fb_textPaddingTop">16dp</item>
+    <item name="fb_iconPosition">center</item>
+    <item name="fb_iconMarginStart">20dp</item>
+    <item name="fb_iconWidth">30dp</item>
+    <item name="fb_iconHeight">20dp</item>
+    <item name="fb_divMarginBottom">10dp</item>
+    <item name="fb_rippleColor">#FBE9E7</item>
+    <item name="fb_divHeight">1dp</item>
+    <item name="fb_divMarginTop">10dp</item>
+    <item name="fb_divColor">#fff</item>
+    <item name="fb_divWidth">100dp</item>
+    <item name="fb_textStyle">bold</item>
+    <item name="fb_shape">rectangle</item>
+    <item name="fb_cornerRadius">10dp</item>
+
+
+</style>
+    <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <!-- Customize color of navigation drawer icon and back arrow -->
+        <item name="colorControlNormal">#fff</item>
+
+    </style>
+    <style name="MaterialButtonChar" parent="@style/Widget.MaterialComponents.Button.OutlinedButton">
+        <!-- Customize color of navigation drawer icon and back arrow -->
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorCustomOrange</item>
+        <item name="strokeColor">@color/colorCustomOrange</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+    <style name="MaterialButtonWordIcon" parent="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon">
+        <!-- Customize color of navigation drawer icon and back arrow -->
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="iconTint">@color/colorCustomOrange</item>
+        <item name="strokeColor">@color/colorCustomOrange</item>
+      <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+</resources>

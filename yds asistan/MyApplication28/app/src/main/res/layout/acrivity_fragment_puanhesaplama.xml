@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:layout_margin="6dp"
+
+
+    >
+<LinearLayout
+    android:orientation="horizontal"
+    android:id="@+id/lin1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/ph_btnHedefAzalt"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:text="-"
+        app:cornerRadius="15dp"
+
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/f"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:startIconDrawable="@drawable/star"
+        app:startIconTint="#D4AF37"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ph_edthedefPuan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Hedef Puan"
+            android:inputType="numberDecimal"
+            android:text="100"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/ph_btnHedefArtir"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:text="+"
+        app:cornerRadius="15dp"
+
+        />
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:id="@+id/lin2"
+        android:layout_below="@id/lin1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/ph_btnDogruAzalt"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="-"
+            app:cornerRadius="15dp"
+
+            />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/fw"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:startIconDrawable="@drawable/circle"
+            app:startIconTint="#090"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ph_edtdogrucevap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Dogru Cevap Sayısı"
+                android:inputType="number"
+                android:text="80"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/ph_btnDogruArtir"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="+"
+            app:cornerRadius="15dp"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:id="@+id/lin3"
+        android:layout_below="@id/lin2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/ph_btnYanlisAzalt"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="-"
+            app:cornerRadius="15dp"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+
+            />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginRight="10dp"
+            android:id="@+id/name_text_input"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            app:startIconDrawable="@drawable/circle"
+            app:startIconTint="#900"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ph_edtyanliscevap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Yanlış Cevap Sayısı"
+                android:inputType="number"
+                android:text="0"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/ph_btnYanlisArtir"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="+"
+            app:cornerRadius="15dp"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@id/lin3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+       <com.google.android.material.button.MaterialButton
+           android:id="@+id/ph_btnHesapla"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+           android:text="Hesapla"
+           />
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yds Puanınız"
+                    android:textSize="18dp"
+                    android:ems="10"
+
+                    />
+                <TextView
+                    android:id="@+id/ph_tvYdsPuan"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:text="100"
+                    android:gravity="center"
+                    />
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Harf Karşılığı"
+                android:textSize="18dp"
+                android:ems="10"
+
+                />
+            <TextView
+                android:id="@+id/ph_tvPuanHarfKarsiligi"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text="A"
+                android:gravity="center"
+                />
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gereken Fazla Puanınız"
+                android:textSize="18dp"
+                android:ems="10"
+                />
+            <TextView
+                android:id="@+id/ph_tvGerekenPuan"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text="0"
+                android:gravity="center"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gereken Fazla Dogru Sayısı"
+                android:textSize="18dp"
+                android:ems="10"
+                />
+            <TextView
+                android:id="@+id/ph_tvGerekenDogruSayisi"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text="0"
+                android:gravity="center"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-8775574156097763/1346302039">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>

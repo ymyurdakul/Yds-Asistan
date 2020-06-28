@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".KelimeFragment"
+    android:orientation="vertical"
+    >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+
+
+    <LinearLayout
+        android:layout_margin="6dp"
+        android:padding="8dp"
+        android:orientation="vertical"
+        android:background="@drawable/wordstroke"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvChar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A...Z"
+            android:gravity="center"
+            android:background="@color/colorCustomOrange"
+            android:textColor="#fdf498 "
+             android:textSize="18dp"
+
+            />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EN:"
+                android:textSize="25dp"
+                android:textColor="@color/colorCustomOrange"
+                android:lines="2"
+                />
+
+            <TextView
+
+                android:id="@+id/tvEnMean"
+                android:lines="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Abbudance"
+                android:textSize="25dp"
+                android:textColor="@color/grey"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TR:"
+                android:textSize="25dp"
+                android:textColor="@color/colorCustomOrange"
+                android:lines="3"
+                />
+
+            <TextView
+                android:id="@+id/tvTrMean"
+                android:lines="3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bolluk,bereket"
+                android:textSize="25dp"
+                android:textColor="@color/grey"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnPreviousWord"
+                style="@style/MaterialButtonWordIcon"
+                app:iconGravity="textStart"
+                app:icon="@drawable/ic_arrow_back_black_24dp"
+
+
+                />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnWordSpeaker"
+                app:icon="@drawable/ic_speaker"
+                style="@style/MaterialButtonWordIcon"
+                app:iconGravity="textStart"
+
+
+                />
+            <com.google.android.material.button.MaterialButton
+
+                app:icon="@drawable/ic_star_unchecked_black_24dp"
+                style="@style/MaterialButtonWordIcon"
+                app:iconGravity="textStart"
+                />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnNextWord"
+                app:icon="@drawable/next_24dp"
+                style="@style/MaterialButtonWordIcon"
+                app:iconGravity="textStart"
+
+                />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAChar"
+        style="@style/MaterialButtonChar"
+        android:text="A"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnBChar"
+        style="@style/MaterialButtonChar"
+        android:text="B"
+
+        />  <com.google.android.material.button.MaterialButton
+    android:id="@+id/btnCChar"
+    style="@style/MaterialButtonChar"
+    android:text="C"
+
+    />  <com.google.android.material.button.MaterialButton
+    android:id="@+id/btnDChar"
+    style="@style/MaterialButtonChar"
+    android:text="D"
+
+    />
+</LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.button.MaterialButton
+
+            android:text="E"
+            style="@style/MaterialButtonChar"
+            />
+        <com.google.android.material.button.MaterialButton
+            style="@style/MaterialButtonChar"
+            android:text="F"
+
+            />
+        <com.google.android.material.button.MaterialButton
+
+        android:text="G"
+            style="@style/MaterialButtonChar"
+        />
+        <com.google.android.material.button.MaterialButton
+        style="@style/MaterialButtonChar"
+        android:text="H"
+
+        />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.button.MaterialButton
+            style="@style/MaterialButtonChar"
+            android:text="I"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:text="J"
+            style="@style/MaterialButtonChar"
+            />
+        <com.google.android.material.button.MaterialButton
+        style="@style/MaterialButtonChar"
+        android:text="K"
+
+        />
+        <com.google.android.material.button.MaterialButton
+        android:text="L"
+            style="@style/MaterialButtonChar"
+        />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.button.MaterialButton
+
+            android:text="M"
+            style="@style/MaterialButtonChar"
+            />
+        <com.google.android.material.button.MaterialButton
+
+            android:text="N"
+            style="@style/MaterialButtonChar"
+            />
+        <com.google.android.material.button.MaterialButton
+            style="@style/MaterialButtonChar"
+        android:text="O"
+
+        />
+        <com.google.android.material.button.MaterialButton
+            style="@style/MaterialButtonChar"
+        android:text="P"
+
+        />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.button.MaterialButton
+            style="@style/MaterialButtonChar"
+            android:text="Q"
+
+            />
+        <com.google.android.material.button.MaterialButton
+            style="@style/MaterialButtonChar"
+            android:text="R"
+
+            />
+        <com.google.android.material.button.MaterialButton
+            style="@style/MaterialButtonChar"
+        android:text="S"
+
+        />
+        <com.google.android.material.button.MaterialButton
+
+        android:text="T"
+            style="@style/MaterialButtonChar"
+        />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.button.MaterialButton
+
+            android:text="U"
+            style="@style/MaterialButtonChar"
+            />
+        <com.google.android.material.button.MaterialButton
+
+            android:text="V"
+            style="@style/MaterialButtonChar"
+            />
+        <com.google.android.material.button.MaterialButton
+
+        android:text="W"
+            style="@style/MaterialButtonChar"
+        />
+        <com.google.android.material.button.MaterialButton
+
+        android:text="X"
+            style="@style/MaterialButtonChar"
+        />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.button.MaterialButton
+
+            android:text="Y"
+            style="@style/MaterialButtonChar"
+            />
+        <com.google.android.material.button.MaterialButton
+
+            android:text="Z"
+            style="@style/MaterialButtonChar"
+            />
+        <com.google.android.material.button.MaterialButton
+
+            android:text="A....Z"
+            style="@style/MaterialButtonChar"
+            />
+    </LinearLayout>
+
+
+
+</LinearLayout>
+</ScrollView>
